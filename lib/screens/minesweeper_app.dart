@@ -71,9 +71,17 @@ class _MineSweeperState extends State<MineSweeper> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: ResultWidget(
-          win: _win,
-          onRestart: _restart,
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          flexibleSpace: ResultWidget(
+            win: _win,
+            onRestart: _restart,
+          ),
         ),
         body: Container(
           color: Colors.grey,
