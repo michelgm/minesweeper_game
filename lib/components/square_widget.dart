@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/square.dart';
 
 class SquareWidget extends StatelessWidget {
-  // const SquareWidget({super.key});
-
   final Square square;
   final void Function(Square) onOpen;
   final void Function(Square) onSwitchMarked;

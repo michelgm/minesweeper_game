@@ -6,6 +6,10 @@ import '../models/square.dart';
 import '../models/explosion_exeption.dart';
 
 class MineSweeper extends StatefulWidget {
+  final int qtBombs;
+
+  const MineSweeper({super.key, required this.qtBombs});
+
   @override
   State<MineSweeper> createState() => _MineSweeperState();
 }
@@ -61,7 +65,7 @@ class _MineSweeperState extends State<MineSweeper> {
       _board = Board(
         rows: qtRows,
         columns: qtColumns,
-        qtBombs: 3,
+        qtBombs: widget.qtBombs,
       );
     }
     return _board!;
@@ -70,6 +74,7 @@ class _MineSweeperState extends State<MineSweeper> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:minesweeper_game/screens/minesweeper_app.dart';
 
 class LevelButton extends StatelessWidget {
   const LevelButton({
     super.key,
     required this.levelText,
+    required this.onPressed,
   });
 
   final String levelText;
+  final Function(String) onPressed;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => MineSweeper()));
+        onPressed(levelText);
       },
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(
