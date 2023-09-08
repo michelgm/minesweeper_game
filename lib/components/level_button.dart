@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LevelButton extends StatelessWidget {
   const LevelButton({
@@ -28,6 +29,11 @@ class LevelButton extends StatelessWidget {
       ),
       child: Text(
         levelText,
+        style: GoogleFonts.dotGothic16(
+            color: const Color.fromARGB(255, 68, 67, 67),
+            letterSpacing: 4,
+            fontSize: 12,
+            fontWeight: FontWeight.w600),
         textAlign: TextAlign.center,
       ),
     );

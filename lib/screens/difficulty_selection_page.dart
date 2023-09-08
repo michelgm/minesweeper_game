@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:minesweeper_game/components/level_button.dart';
 
 import 'minesweeper_app.dart';
@@ -11,11 +12,11 @@ class DifficultySelectionPage extends StatelessWidget {
     void onLevelButtonPressed(String levelText) {
       int qtBombs = 0;
       if (levelText.trim().toUpperCase() == 'EASY') {
-        qtBombs = 5;
-      } else if (levelText.trim().toUpperCase() == 'MEDIUM') {
         qtBombs = 10;
+      } else if (levelText.trim().toUpperCase() == 'MEDIUM') {
+        qtBombs = 20;
       } else if (levelText.trim().toUpperCase() == 'HARD') {
-        qtBombs = 15;
+        qtBombs = 30;
       }
 
       Navigator.push(
@@ -34,13 +35,30 @@ class DifficultySelectionPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Choose Level',
-              style: TextStyle(fontSize: 40),
+            Text(
+              'MINESWEEPER',
+              style: GoogleFonts.vt323(
+                textStyle: const TextStyle(
+                    color: Color.fromARGB(255, 176, 99, 94),
+                    letterSpacing: 5,
+                    fontSize: 65,
+                    fontWeight: FontWeight.w700),
+              ),
+            ),
+            const SizedBox(height: 120),
+            Text(
+              'CHOOSE THE LEVEL',
+              style: GoogleFonts.dotGothic16(
+                textStyle: const TextStyle(
+                    color: Color.fromARGB(255, 68, 67, 67),
+                    letterSpacing: 4,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(height: 80),
             LevelButton(
-              levelText: '  EASY  ',
+              levelText: ' EASY ',
               onPressed: onLevelButtonPressed,
             ),
             const SizedBox(height: 20),
@@ -50,7 +68,7 @@ class DifficultySelectionPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             LevelButton(
-              levelText: '  HARD  ',
+              levelText: ' HARD ',
               onPressed: onLevelButtonPressed,
             ),
           ],
