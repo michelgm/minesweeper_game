@@ -1,16 +1,68 @@
-# minesweeper_game
+# Flutter Minesweeper Game
 
-A new Flutter project.
+This is a Minesweeper game implemented in Flutter. The game allows players to uncover cells on a grid, aiming to avoid hidden mines. The goal is to uncover all non-mine cells without triggering a mine.
+
+## Features
+
+- Three difficulty levels: Easy, Medium, Hard.
+- Customizable mine count for each difficulty level.
+- Clear indication of uncovered cells and discovered mines.
+- Interactive gameplay with easy-to-use controls.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this Minesweeper game on your local machine, make sure you have Flutter installed. If not, you can download it [here](https://flutter.dev/docs/get-started/install).
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the repository:**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    ```bash
+    git clone https://github.com/michelgm/minesweeper_game.git
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd minesweeper_game
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    flutter pub get
+    ```
+
+4. **Run the app:**
+
+    ```bash
+    flutter run
+    ```
+
+## How to Play
+
+1. Launch the app on your device/emulator.
+2. Choose a difficulty level (Easy, Medium, or Hard).
+3. Start the game by tapping on a cell.
+4. Avoid mines by uncovering safe cells.
+5. Use the numbers to determine nearby mines.
+6. Flag potential mine locations to keep track.
+7. Win by uncovering all non-mine cells!
+
+## Customization
+
+You can customize the mine count for each difficulty level by modifying the respective variables in the code.
+
+# Video Demonstration
+
+[![Watch the video](https://github.com/michelgm/minesweeper_game/assets/99933941/1922eba5-e828-4848-93cf-03de0c0caa7f)
+
+https://github.com/michelgm/minesweeper_game/assets/99933941/1922eba5-e828-4848-93cf-03de0c0caa7f
+
+
+## Screenshots
+![minesweeper code screenshot](https://github.com/michelgm/minesweeper_game/assets/99933941/1c95e509-4a8b-4036-ab49-6a292acc86a9)
+
+
+## Acknowledgments
+
+Special thanks to [Cod3r](https://www.cod3r.com.br/) for the guidance and resources provided in their course.
+
