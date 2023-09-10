@@ -47,16 +47,13 @@ To run this Minesweeper game on your local machine, make sure you have Flutter i
 6. Flag potential mine locations to keep track.
 7. Win by uncovering all non-mine cells!
 
+# Video Demonstration
+
+https://github.com/michelgm/minesweeper_game/assets/99933941/f3f8ccca-2463-4a4a-8af4-bc8cfb32e198
+
 ## Customization
 
 You can customize the mine count for each difficulty level by modifying the respective variables in the code.
-
-# Video Demonstration
-
-[![Watch the video](https://github.com/michelgm/minesweeper_game/assets/99933941/1922eba5-e828-4848-93cf-03de0c0caa7f)
-
-https://github.com/michelgm/minesweeper_game/assets/99933941/1922eba5-e828-4848-93cf-03de0c0caa7f
-
 
 ## Screenshots
 ![minesweeper code screenshot](https://github.com/michelgm/minesweeper_game/assets/99933941/1c95e509-4a8b-4036-ab49-6a292acc86a9)
